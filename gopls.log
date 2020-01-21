@@ -1,0 +1,567 @@
+[Trace - 01:21:25.654 AM] Sending request 'textDocument/codeAction - (64)'.
+Params: {"textDocument":{"uri":"file:///e%3A/Dev/go/src/formatproblem/main.go"},"range":{"start":{"line":0,"character":0},"end":{"line":44,"character":1}},"context":{"diagnostics":[{"range":{"start":{"line":30,"character":31},"end":{"line":30,"character":41}},"message":"undeclared name: coord","severity":1,"source":"compiler"},{"range":{"start":{"line":34,"character":41},"end":{"line":34,"character":51}},"message":"undeclared name: coord","severity":1,"source":"compiler"},{"range":{"start":{"line":38,"character":29},"end":{"line":38,"character":39}},"message":"undeclared name: coord","severity":1,"source":"compiler"}]}}
+
+
+[Trace - 01:21:25.699 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:25 31.9148ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"list\" \"-m\" \"-json\" \"all\", stderr: \u003c\u003cgo list -m: not using modules\n\u003e\u003e stdout: \u003c\u003c\u003e\u003e\n"}
+
+
+[Info  - 01:21:25] 2020/01/22 01:21:25 31.9148ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "list" "-m" "-json" "all", stderr: <<go list -m: not using modules
+>> stdout: <<>>
+
+[Trace - 01:21:25.716 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:25 48.8695ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"env\" \"GOMOD\", stderr: \u003c\u003c\u003e\u003e stdout: \u003c\u003c\n\u003e\u003e\n"}
+
+
+[Info  - 01:21:25] 2020/01/22 01:21:25 48.8695ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "env" "GOMOD", stderr: <<>> stdout: <<
+>>
+
+[Trace - 01:21:25.739 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:25 33.9363ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"env\" \"GOPATH\", stderr: \u003c\u003c\u003e\u003e stdout: \u003c\u003cE:\\Dev\\go\n\u003e\u003e\n"}
+
+
+[Info  - 01:21:25] 2020/01/22 01:21:25 33.9363ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "env" "GOPATH", stderr: <<>> stdout: <<E:\Dev\go
+>>
+
+[Trace - 01:21:25.778 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:25 go/packages.Load\n\tpackages = 1"}
+
+
+[Trace - 01:21:25.778 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:25 58.8422ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"list\" \"-e\" \"-json\" \"-compiled=true\" \"-test=true\" \"-export=false\" \"-deps=true\" \"-find=false\" \"--\" \"e:\\\\Dev\\\\go\\\\src\\\\formatproblem\", stderr: \u003c\u003c\u003e\u003e stdout: \u003c\u003c{\n\t\"Dir\": \"E:\\\\Dev\\\\go\\\\src\\\\formatproblem\\\\coord\",\n\t\"ImportPath\": \"formatproblem/coord\",\n\t\"Name\": \"coord\",\n\t\"Target\": \"E:\\\\Dev\\\\go\\\\pkg\\\\windows_amd64\\\\formatproblem\\\\coord.a\",\n\t\"Root\": \"E:\\\\Dev\\\\go\",\n\t\"DepOnly\": true,\n\t\"Stale\": true,\n\t\"StaleReason\": \"build ID mismatch\",\n\t\"GoFiles\": [\n\t\t\"oddr.go\"\n\t],\n\t\"CompiledGoFiles\": [\n\t\t\"oddr.go\"\n\t]\n}\n{\n\t\"Dir\": \"E:\\\\Dev\\\\go\\\\src\\\\formatproblem\",\n\t\"ImportPath\": \"formatproblem\",\n\t\"Name\": \"hexmap\",\n\t\"Target\": \"E:\\\\Dev\\\\go\\\\pkg\\\\windows_amd64\\\\formatproblem.a\",\n\t\"Root\": \"E:\\\\Dev\\\\go\",\n\t\"Match\": [\n\t\t\"e:/Dev/go/src/formatproblem\"\n\t],\n\t\"Stale\": true,\n\t\"StaleReason\": \"stale dependency: formatproblem/coord\",\n\t\"GoFiles\": [\n\t\t\"main.go\"\n\t],\n\t\"CompiledGoFiles\": [\n\t\t\"main.go\"\n\t],\n\t\"Imports\": [\n\t\t\"formatproblem/coord\"\n\t],\n\t\"Deps\": [\n\t\t\"formatproblem/coord\"\n\t]\n}\n\u003e\u003e\n"}
+
+
+[Trace - 01:21:25.778 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:25 go/packages.Load\n\tpackage = formatproblem\n\tfiles = [E:\\Dev\\go\\src\\formatproblem\\main.go]"}
+
+
+[Trace - 01:21:25.778 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:25 fixImports(filename=\"e:\\\\Dev\\\\go\\\\src\\\\formatproblem\\\\main.go\"), abs=\"e:\\\\Dev\\\\go\\\\src\\\\formatproblem\\\\main.go\", srcDir=\"e:\\\\Dev\\\\go\\\\src\\\\formatproblem\" ..."}
+
+
+[Trace - 01:21:25.778 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:25 loading package names for 0 packages"}
+
+
+2020/01/22 01:21:25 gopathwalk: scanning c:\go\src
+[Trace - 01:21:25.778 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:25 done loading package names for 0 packages"}
+
+
+[Info  - 01:21:25] 2020/01/22 01:21:25 go/packages.Load
+	packages = 1
+[Info  - 01:21:25] 2020/01/22 01:21:25 58.8422ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "list" "-e" "-json" "-compiled=true" "-test=true" "-export=false" "-deps=true" "-find=false" "--" "e:\\Dev\\go\\src\\formatproblem", stderr: <<>> stdout: <<{
+	"Dir": "E:\\Dev\\go\\src\\formatproblem\\coord",
+	"ImportPath": "formatproblem/coord",
+	"Name": "coord",
+	"Target": "E:\\Dev\\go\\pkg\\windows_amd64\\formatproblem\\coord.a",
+	"Root": "E:\\Dev\\go",
+	"DepOnly": true,
+	"Stale": true,
+	"StaleReason": "build ID mismatch",
+	"GoFiles": [
+		"oddr.go"
+	],
+	"CompiledGoFiles": [
+		"oddr.go"
+	]
+}
+{
+	"Dir": "E:\\Dev\\go\\src\\formatproblem",
+	"ImportPath": "formatproblem",
+	"Name": "hexmap",
+	"Target": "E:\\Dev\\go\\pkg\\windows_amd64\\formatproblem.a",
+	"Root": "E:\\Dev\\go",
+	"Match": [
+		"e:/Dev/go/src/formatproblem"
+	],
+	"Stale": true,
+	"StaleReason": "stale dependency: formatproblem/coord",
+	"GoFiles": [
+		"main.go"
+	],
+	"CompiledGoFiles": [
+		"main.go"
+	],
+	"Imports": [
+		"formatproblem/coord"
+	],
+	"Deps": [
+		"formatproblem/coord"
+	]
+}
+>>
+
+[Info  - 01:21:25] 2020/01/22 01:21:25 go/packages.Load
+	package = formatproblem
+	files = [E:\Dev\go\src\formatproblem\main.go]
+[Info  - 01:21:25] 2020/01/22 01:21:25 fixImports(filename="e:\\Dev\\go\\src\\formatproblem\\main.go"), abs="e:\\Dev\\go\\src\\formatproblem\\main.go", srcDir="e:\\Dev\\go\\src\\formatproblem" ...
+[Info  - 01:21:25] 2020/01/22 01:21:25 loading package names for 0 packages
+[Info  - 01:21:25] 2020/01/22 01:21:25 done loading package names for 0 packages
+2020/01/22 01:21:25 gopathwalk: scanned c:\go\src in 11.9684ms
+2020/01/22 01:21:25 gopathwalk: scanning E:\Dev\go\src
+2020/01/22 01:21:25 open E:\Dev\go\src\.goimportsignore: The system cannot find the file specified.
+2020/01/22 01:21:25 Error statting ignored directory: CreateFile E:\Dev\go\src\v: The system cannot find the file specified.
+2020/01/22 01:21:25 Error statting ignored directory: CreateFile E:\Dev\go\src\mod: The system cannot find the file specified.
+2020/01/22 01:21:25 gopathwalk: scanned E:\Dev\go\src in 0s
+[Trace - 01:21:25.791 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:25 coord candidate 2/2: hexstrat/hexmap/coord in E:\\Dev\\go\\src\\hexstrat\\hexmap\\coord"}
+
+
+[Info  - 01:21:25] 2020/01/22 01:21:25 coord candidate 2/2: hexstrat/hexmap/coord in E:\Dev\go\src\hexstrat\hexmap\coord
+[Trace - 01:21:25.792 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:25 loading exports in dir E:\\Dev\\go\\src\\formatproblem\\coord (seeking package coord)"}
+
+
+[Trace - 01:21:25.792 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:25 loading exports in dir E:\\Dev\\go\\src\\hexstrat\\hexmap\\coord (seeking package coord)"}
+
+
+[Info  - 01:21:25] 2020/01/22 01:21:25 loading exports in dir E:\Dev\go\src\formatproblem\coord (seeking package coord)
+[Trace - 01:21:25.792 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:25 loading exports in dir E:\\Dev\\go\\src\\hexstrat\\hexmap\\coord (seeking package coord): context canceled"}
+
+
+[Trace - 01:21:25.792 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:25 coord candidate 1/2: formatproblem/coord in E:\\Dev\\go\\src\\formatproblem\\coord"}
+
+
+[Info  - 01:21:25] 2020/01/22 01:21:25 loading exports in dir E:\Dev\go\src\hexstrat\hexmap\coord (seeking package coord)
+[Info  - 01:21:25] 2020/01/22 01:21:25 loading exports in dir E:\Dev\go\src\hexstrat\hexmap\coord (seeking package coord): context canceled
+[Info  - 01:21:25] 2020/01/22 01:21:25 coord candidate 1/2: formatproblem/coord in E:\Dev\go\src\formatproblem\coord
+[Trace - 01:21:25.841 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:25 33.9094ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"env\" \"GOMOD\", stderr: \u003c\u003c\u003e\u003e stdout: \u003c\u003c\n\u003e\u003e\n"}
+
+
+[Info  - 01:21:25] 2020/01/22 01:21:25 33.9094ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "env" "GOMOD", stderr: <<>> stdout: <<
+>>
+
+[Trace - 01:21:25.856 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:25 48.8965ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"list\" \"-m\" \"-json\" \"all\", stderr: \u003c\u003cgo list -m: not using modules\n\u003e\u003e stdout: \u003c\u003c\u003e\u003e\n"}
+
+
+[Info  - 01:21:25] 2020/01/22 01:21:25 48.8965ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "list" "-m" "-json" "all", stderr: <<go list -m: not using modules
+>> stdout: <<>>
+
+[Trace - 01:21:25.900 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:25 37.9261ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"env\" \"GOPATH\", stderr: \u003c\u003c\u003e\u003e stdout: \u003c\u003cE:\\Dev\\go\n\u003e\u003e\n"}
+
+
+[Info  - 01:21:25] 2020/01/22 01:21:25 37.9261ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "env" "GOPATH", stderr: <<>> stdout: <<E:\Dev\go
+>>
+
+[Trace - 01:21:25.920 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:25 go/packages.Load\n\tpackages = 1"}
+
+
+[Trace - 01:21:25.920 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:25 60.9447ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"list\" \"-e\" \"-json\" \"-compiled=true\" \"-test=true\" \"-export=false\" \"-deps=true\" \"-find=false\" \"--\" \"e:\\\\Dev\\\\go\\\\src\\\\formatproblem\", stderr: \u003c\u003c\u003e\u003e stdout: \u003c\u003c{\n\t\"Dir\": \"E:\\\\Dev\\\\go\\\\src\\\\formatproblem\\\\coord\",\n\t\"ImportPath\": \"formatproblem/coord\",\n\t\"Name\": \"coord\",\n\t\"Target\": \"E:\\\\Dev\\\\go\\\\pkg\\\\windows_amd64\\\\formatproblem\\\\coord.a\",\n\t\"Root\": \"E:\\\\Dev\\\\go\",\n\t\"DepOnly\": true,\n\t\"Stale\": true,\n\t\"StaleReason\": \"build ID mismatch\",\n\t\"GoFiles\": [\n\t\t\"oddr.go\"\n\t],\n\t\"CompiledGoFiles\": [\n\t\t\"oddr.go\"\n\t]\n}\n{\n\t\"Dir\": \"E:\\\\Dev\\\\go\\\\src\\\\formatproblem\",\n\t\"ImportPath\": \"formatproblem\",\n\t\"Name\": \"hexmap\",\n\t\"Target\": \"E:\\\\Dev\\\\go\\\\pkg\\\\windows_amd64\\\\formatproblem.a\",\n\t\"Root\": \"E:\\\\Dev\\\\go\",\n\t\"Match\": [\n\t\t\"e:/Dev/go/src/formatproblem\"\n\t],\n\t\"Stale\": true,\n\t\"StaleReason\": \"stale dependency: formatproblem/coord\",\n\t\"GoFiles\": [\n\t\t\"main.go\"\n\t],\n\t\"CompiledGoFiles\": [\n\t\t\"main.go\"\n\t],\n\t\"Imports\": [\n\t\t\"formatproblem/coord\"\n\t],\n\t\"Deps\": [\n\t\t\"formatproblem/coord\"\n\t]\n}\n\u003e\u003e\n"}
+
+
+[Trace - 01:21:25.920 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:25 go/packages.Load\n\tpackage = formatproblem\n\tfiles = [E:\\Dev\\go\\src\\formatproblem\\main.go]"}
+
+
+[Trace - 01:21:25.920 AM] Received response 'textDocument/codeAction - (64)' in 266ms.
+Result: [{"title":"Add import:  \"formatproblem/coord\"","kind":"quickfix","diagnostics":[{"range":{"start":{"line":30,"character":31},"end":{"line":30,"character":41}},"severity":1,"source":"compiler","message":"undeclared name: coord"},{"range":{"start":{"line":34,"character":41},"end":{"line":34,"character":51}},"severity":1,"source":"compiler","message":"undeclared name: coord"},{"range":{"start":{"line":38,"character":29},"end":{"line":38,"character":39}},"severity":1,"source":"compiler","message":"undeclared name: coord"}],"edit":{"changes":{"file:///e:/Dev/go/src/formatproblem/main.go":[{"range":{"start":{"line":0,"character":12},"end":{"line":0,"character":13}},"newText":""},{"range":{"start":{"line":0,"character":13},"end":{"line":0,"character":13}},"newText":"\n\nimport \"formatproblem/coord\""},{"range":{"start":{"line":1,"character":0},"end":{"line":1,"character":1}},"newText":""},{"range":{"start":{"line":2,"character":21},"end":{"line":2,"character":22}},"newText":""},{"range":{"start":{"line":3,"character":11},"end":{"line":3,"character":12}},"newText":""},{"range":{"start":{"line":4,"character":11},"end":{"line":4,"character":12}},"newText":""},{"range":{"start":{"line":5,"character":13},"end":{"line":5,"character":14}},"newText":""},{"range":{"start":{"line":6,"character":1},"end":{"line":6,"character":2}},"newText":""},{"range":{"start":{"line":7,"character":0},"end":{"line":7,"character":1}},"newText":""},{"range":{"start":{"line":8,"character":65},"end":{"line":8,"character":66}},"newText":""},{"range":{"start":{"line":9,"character":16},"end":{"line":9,"character":17}},"newText":""},{"range":{"start":{"line":10,"character":16},"end":{"line":10,"character":17}},"newText":""},{"range":{"start":{"line":11,"character":17},"end":{"line":11,"character":18}},"newText":""},{"range":{"start":{"line":12,"character":36},"end":{"line":12,"character":37}},"newText":""},{"range":{"start":{"line":13,"character":2},"end":{"line":13,"character":3}},"newText":""},{"range":{"start":{"line":14,"character":0},"end":{"line":14,"character":1}},"newText":""},{"range":{"start":{"line":15,"character":40},"end":{"line":15,"character":41}},"newText":""},{"range":{"start":{"line":16,"character":27},"end":{"line":16,"character":28}},"newText":""},{"range":{"start":{"line":17,"character":2},"end":{"line":17,"character":3}},"newText":""},{"range":{"start":{"line":18,"character":0},"end":{"line":18,"character":1}},"newText":""},{"range":{"start":{"line":19,"character":11},"end":{"line":19,"character":12}},"newText":""},{"range":{"start":{"line":20,"character":1},"end":{"line":20,"character":2}},"newText":""},{"range":{"start":{"line":21,"character":0},"end":{"line":21,"character":1}},"newText":""},{"range":{"start":{"line":22,"character":61},"end":{"line":22,"character":62}},"newText":""},{"range":{"start":{"line":23,"character":16},"end":{"line":23,"character":17}},"newText":""},{"range":{"start":{"line":24,"character":16},"end":{"line":24,"character":17}},"newText":""},{"range":{"start":{"line":25,"character":17},"end":{"line":25,"character":18}},"newText":""},{"range":{"start":{"line":26,"character":15},"end":{"line":26,"character":16}},"newText":""},{"range":{"start":{"line":27,"character":2},"end":{"line":27,"character":3}},"newText":""},{"range":{"start":{"line":28,"character":1},"end":{"line":28,"character":2}},"newText":""},{"range":{"start":{"line":29,"character":0},"end":{"line":29,"character":1}},"newText":""},{"range":{"start":{"line":30,"character":48},"end":{"line":30,"character":49}},"newText":""},{"range":{"start":{"line":31,"character":21},"end":{"line":31,"character":22}},"newText":""},{"range":{"start":{"line":31,"character":23},"end":{"line":31,"character":24}},"newText":""},{"range":{"start":{"line":31,"character":31},"end":{"line":31,"character":32}},"newText":""},{"range":{"start":{"line":32,"character":1},"end":{"line":32,"character":2}},"newText":""},{"range":{"start":{"line":33,"character":0},"end":{"line":33,"character":1}},"newText":""},{"range":{"start":{"line":34,"character":9},"end":{"line":34,"character":10}},"newText":""},{"range":{"start":{"line":34,"character":54},"end":{"line":34,"character":55}},"newText":""},{"range":{"start":{"line":35,"character":32},"end":{"line":35,"character":33}},"newText":""},{"range":{"start":{"line":36,"character":1},"end":{"line":36,"character":2}},"newText":""},{"range":{"start":{"line":37,"character":0},"end":{"line":37,"character":1}},"newText":""},{"range":{"start":{"line":38,"character":46},"end":{"line":38,"character":47}},"newText":""},{"range":{"start":{"line":39,"character":32},"end":{"line":39,"character":33}},"newText":""},{"range":{"start":{"line":40,"character":1},"end":{"line":40,"character":2}},"newText":""}]}}},{"title":"Organize Imports","kind":"source.organizeImports","edit":{"changes":{"file:///e:/Dev/go/src/formatproblem/main.go":[{"range":{"start":{"line":0,"character":12},"end":{"line":0,"character":13}},"newText":""},{"range":{"start":{"line":0,"character":13},"end":{"line":0,"character":13}},"newText":"\n\nimport \"formatproblem/coord\""},{"range":{"start":{"line":1,"character":0},"end":{"line":1,"character":1}},"newText":""},{"range":{"start":{"line":2,"character":21},"end":{"line":2,"character":22}},"newText":""},{"range":{"start":{"line":3,"character":11},"end":{"line":3,"character":12}},"newText":""},{"range":{"start":{"line":4,"character":11},"end":{"line":4,"character":12}},"newText":""},{"range":{"start":{"line":5,"character":13},"end":{"line":5,"character":14}},"newText":""},{"range":{"start":{"line":6,"character":1},"end":{"line":6,"character":2}},"newText":""},{"range":{"start":{"line":7,"character":0},"end":{"line":7,"character":1}},"newText":""},{"range":{"start":{"line":8,"character":65},"end":{"line":8,"character":66}},"newText":""},{"range":{"start":{"line":9,"character":16},"end":{"line":9,"character":17}},"newText":""},{"range":{"start":{"line":10,"character":16},"end":{"line":10,"character":17}},"newText":""},{"range":{"start":{"line":11,"character":17},"end":{"line":11,"character":18}},"newText":""},{"range":{"start":{"line":12,"character":36},"end":{"line":12,"character":37}},"newText":""},{"range":{"start":{"line":13,"character":2},"end":{"line":13,"character":3}},"newText":""},{"range":{"start":{"line":14,"character":0},"end":{"line":14,"character":1}},"newText":""},{"range":{"start":{"line":15,"character":40},"end":{"line":15,"character":41}},"newText":""},{"range":{"start":{"line":16,"character":27},"end":{"line":16,"character":28}},"newText":""},{"range":{"start":{"line":17,"character":2},"end":{"line":17,"character":3}},"newText":""},{"range":{"start":{"line":18,"character":0},"end":{"line":18,"character":1}},"newText":""},{"range":{"start":{"line":19,"character":11},"end":{"line":19,"character":12}},"newText":""},{"range":{"start":{"line":20,"character":1},"end":{"line":20,"character":2}},"newText":""},{"range":{"start":{"line":21,"character":0},"end":{"line":21,"character":1}},"newText":""},{"range":{"start":{"line":22,"character":61},"end":{"line":22,"character":62}},"newText":""},{"range":{"start":{"line":23,"character":16},"end":{"line":23,"character":17}},"newText":""},{"range":{"start":{"line":24,"character":16},"end":{"line":24,"character":17}},"newText":""},{"range":{"start":{"line":25,"character":17},"end":{"line":25,"character":18}},"newText":""},{"range":{"start":{"line":26,"character":15},"end":{"line":26,"character":16}},"newText":""},{"range":{"start":{"line":27,"character":2},"end":{"line":27,"character":3}},"newText":""},{"range":{"start":{"line":28,"character":1},"end":{"line":28,"character":2}},"newText":""},{"range":{"start":{"line":29,"character":0},"end":{"line":29,"character":1}},"newText":""},{"range":{"start":{"line":30,"character":48},"end":{"line":30,"character":49}},"newText":""},{"range":{"start":{"line":31,"character":21},"end":{"line":31,"character":22}},"newText":""},{"range":{"start":{"line":31,"character":23},"end":{"line":31,"character":24}},"newText":""},{"range":{"start":{"line":31,"character":31},"end":{"line":31,"character":32}},"newText":""},{"range":{"start":{"line":32,"character":1},"end":{"line":32,"character":2}},"newText":""},{"range":{"start":{"line":33,"character":0},"end":{"line":33,"character":1}},"newText":""},{"range":{"start":{"line":34,"character":9},"end":{"line":34,"character":10}},"newText":""},{"range":{"start":{"line":34,"character":54},"end":{"line":34,"character":55}},"newText":""},{"range":{"start":{"line":35,"character":32},"end":{"line":35,"character":33}},"newText":""},{"range":{"start":{"line":36,"character":1},"end":{"line":36,"character":2}},"newText":""},{"range":{"start":{"line":37,"character":0},"end":{"line":37,"character":1}},"newText":""},{"range":{"start":{"line":38,"character":46},"end":{"line":38,"character":47}},"newText":""},{"range":{"start":{"line":39,"character":32},"end":{"line":39,"character":33}},"newText":""},{"range":{"start":{"line":40,"character":1},"end":{"line":40,"character":2}},"newText":""}]}}}]
+
+
+[Info  - 01:21:25] 2020/01/22 01:21:25 go/packages.Load
+	packages = 1
+[Info  - 01:21:25] 2020/01/22 01:21:25 60.9447ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "list" "-e" "-json" "-compiled=true" "-test=true" "-export=false" "-deps=true" "-find=false" "--" "e:\\Dev\\go\\src\\formatproblem", stderr: <<>> stdout: <<{
+	"Dir": "E:\\Dev\\go\\src\\formatproblem\\coord",
+	"ImportPath": "formatproblem/coord",
+	"Name": "coord",
+	"Target": "E:\\Dev\\go\\pkg\\windows_amd64\\formatproblem\\coord.a",
+	"Root": "E:\\Dev\\go",
+	"DepOnly": true,
+	"Stale": true,
+	"StaleReason": "build ID mismatch",
+	"GoFiles": [
+		"oddr.go"
+	],
+	"CompiledGoFiles": [
+		"oddr.go"
+	]
+}
+{
+	"Dir": "E:\\Dev\\go\\src\\formatproblem",
+	"ImportPath": "formatproblem",
+	"Name": "hexmap",
+	"Target": "E:\\Dev\\go\\pkg\\windows_amd64\\formatproblem.a",
+	"Root": "E:\\Dev\\go",
+	"Match": [
+		"e:/Dev/go/src/formatproblem"
+	],
+	"Stale": true,
+	"StaleReason": "stale dependency: formatproblem/coord",
+	"GoFiles": [
+		"main.go"
+	],
+	"CompiledGoFiles": [
+		"main.go"
+	],
+	"Imports": [
+		"formatproblem/coord"
+	],
+	"Deps": [
+		"formatproblem/coord"
+	]
+}
+>>
+
+[Info  - 01:21:25] 2020/01/22 01:21:25 go/packages.Load
+	package = formatproblem
+	files = [E:\Dev\go\src\formatproblem\main.go]
+[Trace - 01:21:25.930 AM] Sending notification 'textDocument/didChange'.
+Params: {"textDocument":{"uri":"file:///e%3A/Dev/go/src/formatproblem/main.go","version":2},"contentChanges":[{"range":{"start":{"line":38,"character":46},"end":{"line":38,"character":47}},"rangeLength":1,"text":""},{"range":{"start":{"line":34,"character":9},"end":{"line":34,"character":10}},"rangeLength":1,"text":""},{"range":{"start":{"line":29,"character":0},"end":{"line":29,"character":1}},"rangeLength":1,"text":""},{"range":{"start":{"line":28,"character":1},"end":{"line":28,"character":2}},"rangeLength":1,"text":""},{"range":{"start":{"line":27,"character":2},"end":{"line":27,"character":3}},"rangeLength":1,"text":""},{"range":{"start":{"line":26,"character":15},"end":{"line":26,"character":16}},"rangeLength":1,"text":""},{"range":{"start":{"line":21,"character":0},"end":{"line":21,"character":1}},"rangeLength":1,"text":""},{"range":{"start":{"line":20,"character":1},"end":{"line":20,"character":2}},"rangeLength":1,"text":""},{"range":{"start":{"line":19,"character":11},"end":{"line":19,"character":12}},"rangeLength":1,"text":""},{"range":{"start":{"line":16,"character":27},"end":{"line":16,"character":28}},"rangeLength":1,"text":""},{"range":{"start":{"line":14,"character":0},"end":{"line":14,"character":1}},"rangeLength":1,"text":""},{"range":{"start":{"line":13,"character":2},"end":{"line":13,"character":3}},"rangeLength":1,"text":""},{"range":{"start":{"line":12,"character":36},"end":{"line":12,"character":37}},"rangeLength":1,"text":""},{"range":{"start":{"line":7,"character":0},"end":{"line":7,"character":1}},"rangeLength":1,"text":""},{"range":{"start":{"line":6,"character":1},"end":{"line":6,"character":2}},"rangeLength":1,"text":""},{"range":{"start":{"line":3,"character":11},"end":{"line":3,"character":12}},"rangeLength":1,"text":""},{"range":{"start":{"line":0,"character":13},"end":{"line":0,"character":13}},"rangeLength":0,"text":"\r\n\r\nimport \"formatproblem/coord\""},{"range":{"start":{"line":0,"character":12},"end":{"line":0,"character":13}},"rangeLength":1,"text":""}]}
+
+
+[Trace - 01:21:25.930 AM] Sending request 'textDocument/formatting - (65)'.
+Params: {"textDocument":{"uri":"file:///e%3A/Dev/go/src/formatproblem/main.go"},"options":{"tabSize":4,"insertSpaces":false}}
+
+
+[Trace - 01:21:25.982 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:25 34.9063ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"env\" \"GOMOD\", stderr: \u003c\u003c\u003e\u003e stdout: \u003c\u003c\n\u003e\u003e\n"}
+
+
+[Info  - 01:21:25] 2020/01/22 01:21:25 34.9063ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "env" "GOMOD", stderr: <<>> stdout: <<
+>>
+
+[Trace - 01:21:26.003 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 55.8501ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"list\" \"-m\" \"-json\" \"all\", stderr: \u003c\u003cgo list -m: not using modules\n\u003e\u003e stdout: \u003c\u003c\u003e\u003e\n"}
+
+
+[Info  - 01:21:26] 2020/01/22 01:21:26 55.8501ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "list" "-m" "-json" "all", stderr: <<go list -m: not using modules
+>> stdout: <<>>
+
+[Trace - 01:21:26.026 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 75.4979ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"list\" \"-m\" \"-json\" \"all\", stderr: \u003c\u003cgo list -m: not using modules\n\u003e\u003e stdout: \u003c\u003c\u003e\u003e\n"}
+
+
+[Info  - 01:21:26] 2020/01/22 01:21:26 75.4979ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "list" "-m" "-json" "all", stderr: <<go list -m: not using modules
+>> stdout: <<>>
+
+[Trace - 01:21:26.038 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 87.4655ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"env\" \"GOMOD\", stderr: \u003c\u003c\u003e\u003e stdout: \u003c\u003c\n\u003e\u003e\n"}
+
+
+[Info  - 01:21:26] 2020/01/22 01:21:26 87.4655ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "env" "GOMOD", stderr: <<>> stdout: <<
+>>
+
+[Trace - 01:21:26.062 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 51.8623ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"env\" \"GOPATH\", stderr: \u003c\u003c\u003e\u003e stdout: \u003c\u003cE:\\Dev\\go\n\u003e\u003e\n"}
+
+
+[Info  - 01:21:26] 2020/01/22 01:21:26 51.8623ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "env" "GOPATH", stderr: <<>> stdout: <<E:\Dev\go
+>>
+
+[Trace - 01:21:26.084 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 77.7917ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"list\" \"-e\" \"-json\" \"-compiled=true\" \"-test=true\" \"-export=false\" \"-deps=true\" \"-find=false\" \"--\" \"e:\\\\Dev\\\\go\\\\src\\\\formatproblem\", stderr: \u003c\u003c\u003e\u003e stdout: \u003c\u003c{\n\t\"Dir\": \"E:\\\\Dev\\\\go\\\\src\\\\formatproblem\\\\coord\",\n\t\"ImportPath\": \"formatproblem/coord\",\n\t\"Name\": \"coord\",\n\t\"Target\": \"E:\\\\Dev\\\\go\\\\pkg\\\\windows_amd64\\\\formatproblem\\\\coord.a\",\n\t\"Root\": \"E:\\\\Dev\\\\go\",\n\t\"DepOnly\": true,\n\t\"Stale\": true,\n\t\"StaleReason\": \"build ID mismatch\",\n\t\"GoFiles\": [\n\t\t\"oddr.go\"\n\t],\n\t\"CompiledGoFiles\": [\n\t\t\"oddr.go\"\n\t]\n}\n{\n\t\"Dir\": \"E:\\\\Dev\\\\go\\\\src\\\\formatproblem\",\n\t\"ImportPath\": \"formatproblem\",\n\t\"Name\": \"hexmap\",\n\t\"Target\": \"E:\\\\Dev\\\\go\\\\pkg\\\\windows_amd64\\\\formatproblem.a\",\n\t\"Root\": \"E:\\\\Dev\\\\go\",\n\t\"Match\": [\n\t\t\"e:/Dev/go/src/formatproblem\"\n\t],\n\t\"Stale\": true,\n\t\"StaleReason\": \"stale dependency: formatproblem/coord\",\n\t\"GoFiles\": [\n\t\t\"main.go\"\n\t],\n\t\"CompiledGoFiles\": [\n\t\t\"main.go\"\n\t],\n\t\"Imports\": [\n\t\t\"formatproblem/coord\"\n\t],\n\t\"Deps\": [\n\t\t\"formatproblem/coord\"\n\t]\n}\n\u003e\u003e\n"}
+
+
+[Trace - 01:21:26.084 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 e:\\Dev\\go\\src\\formatproblem does not have prefix E:\\Dev\\go\\src"}
+
+
+[Trace - 01:21:26.084 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 go/packages.Load\n\tpackages = 1"}
+
+
+[Trace - 01:21:26.084 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 go/packages.Load\n\tpackage = formatproblem\n\tfiles = [E:\\Dev\\go\\src\\formatproblem\\main.go]"}
+
+
+[Info  - 01:21:26] 2020/01/22 01:21:26 77.7917ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "list" "-e" "-json" "-compiled=true" "-test=true" "-export=false" "-deps=true" "-find=false" "--" "e:\\Dev\\go\\src\\formatproblem", stderr: <<>> stdout: <<{
+	"Dir": "E:\\Dev\\go\\src\\formatproblem\\coord",
+	"ImportPath": "formatproblem/coord",
+	"Name": "coord",
+	"Target": "E:\\Dev\\go\\pkg\\windows_amd64\\formatproblem\\coord.a",
+	"Root": "E:\\Dev\\go",
+	"DepOnly": true,
+	"Stale": true,
+	"StaleReason": "build ID mismatch",
+	"GoFiles": [
+		"oddr.go"
+	],
+	"CompiledGoFiles": [
+		"oddr.go"
+	]
+}
+{
+	"Dir": "E:\\Dev\\go\\src\\formatproblem",
+	"ImportPath": "formatproblem",
+	"Name": "hexmap",
+	"Target": "E:\\Dev\\go\\pkg\\windows_amd64\\formatproblem.a",
+	"Root": "E:\\Dev\\go",
+	"Match": [
+		"e:/Dev/go/src/formatproblem"
+	],
+	"Stale": true,
+	"StaleReason": "stale dependency: formatproblem/coord",
+	"GoFiles": [
+		"main.go"
+	],
+	"CompiledGoFiles": [
+		"main.go"
+	],
+	"Imports": [
+		"formatproblem/coord"
+	],
+	"Deps": [
+		"formatproblem/coord"
+	]
+}
+>>
+
+[Info  - 01:21:26] 2020/01/22 01:21:26 e:\Dev\go\src\formatproblem does not have prefix E:\Dev\go\src
+[Trace - 01:21:26.084 AM] Received response 'textDocument/formatting - (65)' in 154ms.
+Result: [{"range":{"start":{"line":0,"character":12},"end":{"line":0,"character":13}},"newText":""},{"range":{"start":{"line":1,"character":0},"end":{"line":1,"character":1}},"newText":""},{"range":{"start":{"line":2,"character":21},"end":{"line":2,"character":22}},"newText":""},{"range":{"start":{"line":3,"character":11},"end":{"line":3,"character":12}},"newText":""},{"range":{"start":{"line":4,"character":11},"end":{"line":4,"character":12}},"newText":""},{"range":{"start":{"line":5,"character":13},"end":{"line":5,"character":14}},"newText":""},{"range":{"start":{"line":6,"character":1},"end":{"line":6,"character":2}},"newText":""},{"range":{"start":{"line":7,"character":0},"end":{"line":7,"character":1}},"newText":""},{"range":{"start":{"line":8,"character":65},"end":{"line":8,"character":66}},"newText":""},{"range":{"start":{"line":9,"character":16},"end":{"line":9,"character":17}},"newText":""},{"range":{"start":{"line":10,"character":16},"end":{"line":10,"character":17}},"newText":""},{"range":{"start":{"line":11,"character":17},"end":{"line":11,"character":18}},"newText":""},{"range":{"start":{"line":12,"character":36},"end":{"line":12,"character":37}},"newText":""},{"range":{"start":{"line":13,"character":2},"end":{"line":13,"character":3}},"newText":""},{"range":{"start":{"line":14,"character":0},"end":{"line":14,"character":1}},"newText":""},{"range":{"start":{"line":15,"character":40},"end":{"line":15,"character":41}},"newText":""},{"range":{"start":{"line":16,"character":27},"end":{"line":16,"character":28}},"newText":""},{"range":{"start":{"line":17,"character":2},"end":{"line":17,"character":3}},"newText":""},{"range":{"start":{"line":18,"character":0},"end":{"line":18,"character":1}},"newText":""},{"range":{"start":{"line":19,"character":11},"end":{"line":19,"character":12}},"newText":""},{"range":{"start":{"line":20,"character":1},"end":{"line":20,"character":2}},"newText":""},{"range":{"start":{"line":21,"character":0},"end":{"line":21,"character":1}},"newText":""},{"range":{"start":{"line":22,"character":61},"end":{"line":22,"character":62}},"newText":""},{"range":{"start":{"line":23,"character":16},"end":{"line":23,"character":17}},"newText":""},{"range":{"start":{"line":24,"character":16},"end":{"line":24,"character":17}},"newText":""},{"range":{"start":{"line":25,"character":17},"end":{"line":25,"character":18}},"newText":""},{"range":{"start":{"line":26,"character":15},"end":{"line":26,"character":16}},"newText":""},{"range":{"start":{"line":27,"character":2},"end":{"line":27,"character":3}},"newText":""},{"range":{"start":{"line":28,"character":1},"end":{"line":28,"character":2}},"newText":""},{"range":{"start":{"line":29,"character":0},"end":{"line":29,"character":1}},"newText":""},{"range":{"start":{"line":30,"character":48},"end":{"line":30,"character":49}},"newText":""},{"range":{"start":{"line":31,"character":21},"end":{"line":31,"character":22}},"newText":""},{"range":{"start":{"line":31,"character":23},"end":{"line":31,"character":24}},"newText":""},{"range":{"start":{"line":31,"character":31},"end":{"line":31,"character":32}},"newText":""},{"range":{"start":{"line":32,"character":1},"end":{"line":32,"character":2}},"newText":""},{"range":{"start":{"line":33,"character":0},"end":{"line":33,"character":1}},"newText":""},{"range":{"start":{"line":34,"character":9},"end":{"line":34,"character":10}},"newText":""},{"range":{"start":{"line":34,"character":54},"end":{"line":34,"character":55}},"newText":""},{"range":{"start":{"line":35,"character":32},"end":{"line":35,"character":33}},"newText":""},{"range":{"start":{"line":36,"character":1},"end":{"line":36,"character":2}},"newText":""},{"range":{"start":{"line":37,"character":0},"end":{"line":37,"character":1}},"newText":""},{"range":{"start":{"line":38,"character":46},"end":{"line":38,"character":47}},"newText":""},{"range":{"start":{"line":39,"character":32},"end":{"line":39,"character":33}},"newText":""},{"range":{"start":{"line":40,"character":1},"end":{"line":40,"character":2}},"newText":""}]
+
+
+[Info  - 01:21:26] 2020/01/22 01:21:26 go/packages.Load
+	packages = 1
+[Info  - 01:21:26] 2020/01/22 01:21:26 go/packages.Load
+	package = formatproblem
+	files = [E:\Dev\go\src\formatproblem\main.go]
+[Trace - 01:21:26.088 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 52.858ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"env\" \"GOPATH\", stderr: \u003c\u003c\u003e\u003e stdout: \u003c\u003cE:\\Dev\\go\n\u003e\u003e\n"}
+
+
+[Info  - 01:21:26] 2020/01/22 01:21:26 52.858ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "env" "GOPATH", stderr: <<>> stdout: <<E:\Dev\go
+>>
+
+[Trace - 01:21:26.091 AM] Sending notification 'textDocument/didChange'.
+Params: {"textDocument":{"uri":"file:///e%3A/Dev/go/src/formatproblem/main.go","version":3},"contentChanges":[{"range":{"start":{"line":40,"character":1},"end":{"line":40,"character":2}},"rangeLength":1,"text":""},{"range":{"start":{"line":37,"character":0},"end":{"line":37,"character":1}},"rangeLength":1,"text":""},{"range":{"start":{"line":36,"character":1},"end":{"line":36,"character":2}},"rangeLength":1,"text":""},{"range":{"start":{"line":33,"character":0},"end":{"line":33,"character":1}},"rangeLength":1,"text":""},{"range":{"start":{"line":32,"character":1},"end":{"line":32,"character":2}},"rangeLength":1,"text":""},{"range":{"start":{"line":29,"character":0},"end":{"line":29,"character":1}},"rangeLength":1,"text":""},{"range":{"start":{"line":28,"character":1},"end":{"line":28,"character":2}},"rangeLength":1,"text":""},{"range":{"start":{"line":21,"character":0},"end":{"line":21,"character":1}},"rangeLength":1,"text":""},{"range":{"start":{"line":18,"character":0},"end":{"line":18,"character":1}},"rangeLength":1,"text":""},{"range":{"start":{"line":17,"character":2},"end":{"line":17,"character":3}},"rangeLength":1,"text":""},{"range":{"start":{"line":14,"character":0},"end":{"line":14,"character":1}},"rangeLength":1,"text":""},{"range":{"start":{"line":5,"character":13},"end":{"line":5,"character":14}},"rangeLength":1,"text":""},{"range":{"start":{"line":2,"character":21},"end":{"line":2,"character":22}},"rangeLength":1,"text":""}]}
+
+
+[Trace - 01:21:26.100 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 68.704ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"list\" \"-e\" \"-json\" \"-compiled=true\" \"-test=true\" \"-export=false\" \"-deps=true\" \"-find=false\" \"--\" \"e:\\\\Dev\\\\go\\\\src\\\\formatproblem\", stderr: \u003c\u003c\u003e\u003e stdout: \u003c\u003c\u003e\u003e\n"}
+
+
+[Info  - 01:21:26] 2020/01/22 01:21:26 68.704ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "list" "-e" "-json" "-compiled=true" "-test=true" "-export=false" "-deps=true" "-find=false" "--" "e:\\Dev\\go\\src\\formatproblem", stderr: <<>> stdout: <<>>
+
+[Trace - 01:21:26.106 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 go/packages.Load\n\tpackages = 0"}
+
+
+[Trace - 01:21:26.106 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 0s for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"list\" \"-e\" \"-json\" \"-compiled=true\" \"-test=true\" \"-export=false\" \"-deps=true\" \"-find=false\" \"--\" \"e:\\\\Dev\\\\go\\\\src\\\\formatproblem\\\\main.go\", stderr: \u003c\u003c\u003e\u003e stdout: \u003c\u003c\u003e\u003e\n"}
+
+
+[Info  - 01:21:26] 2020/01/22 01:21:26 go/packages.Load
+	packages = 0
+[Info  - 01:21:26] 2020/01/22 01:21:26 0s for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "list" "-e" "-json" "-compiled=true" "-test=true" "-export=false" "-deps=true" "-find=false" "--" "e:\\Dev\\go\\src\\formatproblem\\main.go", stderr: <<>> stdout: <<>>
+
+[Trace - 01:21:26.119 AM] Sending notification 'textDocument/didSave'.
+Params: {"textDocument":{"uri":"file:///e%3A/Dev/go/src/formatproblem/main.go","version":3}}
+
+
+[Trace - 01:21:26.140 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 33.898ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"env\" \"GOMOD\", stderr: \u003c\u003c\u003e\u003e stdout: \u003c\u003c\n\u003e\u003e\n"}
+
+
+[Info  - 01:21:26] 2020/01/22 01:21:26 33.898ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "env" "GOMOD", stderr: <<>> stdout: <<
+>>
+
+[Trace - 01:21:26.150 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 42.8739ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"list\" \"-m\" \"-json\" \"all\", stderr: \u003c\u003cgo list -m: not using modules\n\u003e\u003e stdout: \u003c\u003c\u003e\u003e\n"}
+
+
+[Info  - 01:21:26] 2020/01/22 01:21:26 42.8739ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "list" "-m" "-json" "all", stderr: <<go list -m: not using modules
+>> stdout: <<>>
+
+[Trace - 01:21:26.187 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 31.4923ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"env\" \"GOPATH\", stderr: \u003c\u003c\u003e\u003e stdout: \u003c\u003cE:\\Dev\\go\n\u003e\u003e\n"}
+
+
+[Info  - 01:21:26] 2020/01/22 01:21:26 31.4923ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "env" "GOPATH", stderr: <<>> stdout: <<E:\Dev\go
+>>
+
+[Trace - 01:21:26.230 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 59.8422ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"list\" \"-e\" \"-json\" \"-compiled=true\" \"-test=true\" \"-export=false\" \"-deps=true\" \"-find=false\" \"--\" \"e:\\\\Dev\\\\go\\\\src\\\\formatproblem\", stderr: \u003c\u003c\u003e\u003e stdout: \u003c\u003c{\n\t\"ImportPath\": \"formatproblemcoord\",\n\t\"DepOnly\": true,\n\t\"Incomplete\": true,\n\t\"Stale\": true,\n\t\"StaleReason\": \"build ID mismatch\",\n\t\"Error\": {\n\t\t\"ImportStack\": [\n\t\t\t\"formatproblem\",\n\t\t\t\"formatproblemcoord\"\n\t\t],\n\t\t\"Pos\": \"main.go:3:8\",\n\t\t\"Err\": \"cannot find package \\\"formatproblemcoord\\\" in any of:\\n\\tc:\\\\go\\\\src\\\\formatproblemcoord (from $GOROOT)\\n\\tE:\\\\Dev\\\\go\\\\src\\\\formatproblemcoord (from $GOPATH)\"\n\t}\n}\n{\n\t\"Dir\": \"E:\\\\Dev\\\\go\\\\src\\\\formatproblem\",\n\t\"ImportPath\": \"formatproblem\",\n\t\"Name\": \"hexm\",\n\t\"Target\": \"E:\\\\Dev\\\\go\\\\pkg\\\\windows_amd64\\\\formatproblem.a\",\n\t\"Root\": \"E:\\\\Dev\\\\go\",\n\t\"Match\": [\n\t\t\"e:/Dev/go/src/formatproblem\"\n\t],\n\t\"Incomplete\": true,\n\t\"Stale\": true,\n\t\"StaleReason\": \"stale dependency: formatproblemcoord\",\n\t\"GoFiles\": [\n\t\t\"main.go\"\n\t],\n\t\"CompiledGoFiles\": [\n\t\t\"main.go\"\n\t],\n\t\"Imports\": [\n\t\t\"formatproblemcoord\"\n\t],\n\t\"Deps\": [\n\t\t\"formatproblemcoord\"\n\t],\n\t\"DepsErrors\": [\n\t\t{\n\t\t\t\"ImportStack\": [\n\t\t\t\t\"formatproblem\",\n\t\t\t\t\"formatproblemcoord\"\n\t\t\t],\n\t\t\t\"Pos\": \"main.go:3:8\",\n\t\t\t\"Err\": \"cannot find package \\\"formatproblemcoord\\\" in any of:\\n\\tc:\\\\go\\\\src\\\\formatproblemcoord (from $GOROOT)\\n\\tE:\\\\Dev\\\\go\\\\src\\\\formatproblemcoord (from $GOPATH)\"\n\t\t}\n\t]\n}\n\u003e\u003e\n"}
+
+
+[Info  - 01:21:26] 2020/01/22 01:21:26 59.8422ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "list" "-e" "-json" "-compiled=true" "-test=true" "-export=false" "-deps=true" "-find=false" "--" "e:\\Dev\\go\\src\\formatproblem", stderr: <<>> stdout: <<{
+	"ImportPath": "formatproblemcoord",
+	"DepOnly": true,
+	"Incomplete": true,
+	"Stale": true,
+	"StaleReason": "build ID mismatch",
+	"Error": {
+		"ImportStack": [
+			"formatproblem",
+			"formatproblemcoord"
+		],
+		"Pos": "main.go:3:8",
+		"Err": "cannot find package \"formatproblemcoord\" in any of:\n\tc:\\go\\src\\formatproblemcoord (from $GOROOT)\n\tE:\\Dev\\go\\src\\formatproblemcoord (from $GOPATH)"
+	}
+}
+{
+	"Dir": "E:\\Dev\\go\\src\\formatproblem",
+	"ImportPath": "formatproblem",
+	"Name": "hexm",
+	"Target": "E:\\Dev\\go\\pkg\\windows_amd64\\formatproblem.a",
+	"Root": "E:\\Dev\\go",
+	"Match": [
+		"e:/Dev/go/src/formatproblem"
+	],
+	"Incomplete": true,
+	"Stale": true,
+	"StaleReason": "stale dependency: formatproblemcoord",
+	"GoFiles": [
+		"main.go"
+	],
+	"CompiledGoFiles": [
+		"main.go"
+	],
+	"Imports": [
+		"formatproblemcoord"
+	],
+	"Deps": [
+		"formatproblemcoord"
+	],
+	"DepsErrors": [
+		{
+			"ImportStack": [
+				"formatproblem",
+				"formatproblemcoord"
+			],
+			"Pos": "main.go:3:8",
+			"Err": "cannot find package \"formatproblemcoord\" in any of:\n\tc:\\go\\src\\formatproblemcoord (from $GOROOT)\n\tE:\\Dev\\go\\src\\formatproblemcoord (from $GOPATH)"
+		}
+	]
+}
+>>
+
+[Trace - 01:21:26.231 AM] Received notification 'textDocument/publishDiagnostics'.
+Params: {"uri":"file:///e:/Dev/go/src/formatproblem/main.go","diagnostics":[{"range":{"start":{"line":30,"character":31},"end":{"line":30,"character":41}},"severity":1,"source":"compiler","message":"undeclared name: coord"},{"range":{"start":{"line":34,"character":41},"end":{"line":34,"character":51}},"severity":1,"source":"compiler","message":"undeclared name: coord"},{"range":{"start":{"line":38,"character":29},"end":{"line":38,"character":39}},"severity":1,"source":"compiler","message":"undeclared name: coord"}]}
+
+
+[Trace - 01:21:26.230 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 go/packages.Load\n\tpackages = 1"}
+
+
+[Trace - 01:21:26.231 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 go/packages.Load\n\tpackage = formatproblem\n\tfiles = [E:\\Dev\\go\\src\\formatproblem\\main.go]"}
+
+
+[Info  - 01:21:26] 2020/01/22 01:21:26 go/packages.Load
+	packages = 1
+[Info  - 01:21:26] 2020/01/22 01:21:26 go/packages.Load
+	package = formatproblem
+	files = [E:\Dev\go\src\formatproblem\main.go]
+[Trace - 01:21:26.288 AM] Sending request 'textDocument/foldingRange - (66)'.
+Params: {"textDocument":{"uri":"file:///e%3A/Dev/go/src/formatproblem/main.go"}}
+
+
+[Trace - 01:21:26.288 AM] Received response 'textDocument/foldingRange - (66)' in 0ms.
+Result: [{"startLine":2,"startCharacter":21,"endLine":5,"endCharacter":13},{"startLine":8,"startCharacter":65,"endLine":19,"endCharacter":11},{"startLine":15,"startCharacter":40,"endLine":16,"endCharacter":27},{"startLine":22,"startCharacter":61,"endLine":27,"endCharacter":2},{"startLine":30,"startCharacter":48,"endLine":31,"endCharacter":31},{"startLine":34,"startCharacter":54,"endLine":35,"endCharacter":32},{"startLine":38,"startCharacter":46,"endLine":39,"endCharacter":32}]
+
+
+[Trace - 01:21:26.558 AM] Sending request 'textDocument/documentSymbol - (67)'.
+Params: {"textDocument":{"uri":"file:///e%3A/Dev/go/src/formatproblem/main.go"}}
+
+
+[Trace - 01:21:26.608 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 35.9036ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"list\" \"-m\" \"-json\" \"all\", stderr: \u003c\u003cgo list -m: not using modules\n\u003e\u003e stdout: \u003c\u003c\u003e\u003e\n"}
+
+
+[Info  - 01:21:26] 2020/01/22 01:21:26 35.9036ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "list" "-m" "-json" "all", stderr: <<go list -m: not using modules
+>> stdout: <<>>
+
+[Trace - 01:21:26.616 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 42.8838ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"env\" \"GOMOD\", stderr: \u003c\u003c\u003e\u003e stdout: \u003c\u003c\n\u003e\u003e\n"}
+
+
+[Info  - 01:21:26] 2020/01/22 01:21:26 42.8838ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "env" "GOMOD", stderr: <<>> stdout: <<
+>>
+
+[Trace - 01:21:26.645 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 31.086ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"env\" \"GOPATH\", stderr: \u003c\u003c\u003e\u003e stdout: \u003c\u003cE:\\Dev\\go\n\u003e\u003e\n"}
+
+
+[Info  - 01:21:26] 2020/01/22 01:21:26 31.086ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "env" "GOPATH", stderr: <<>> stdout: <<E:\Dev\go
+>>
+
+[Trace - 01:21:26.699 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 59.4789ms for GOROOT=c:\\go GOPATH=E:\\Dev\\go GO111MODULE= PWD=e:\\Dev\\go\\src\\formatproblem go \"list\" \"-e\" \"-json\" \"-compiled=true\" \"-test=true\" \"-export=false\" \"-deps=true\" \"-find=false\" \"--\" \"e:\\\\Dev\\\\go\\\\src\\\\formatproblem\", stderr: \u003c\u003c\u003e\u003e stdout: \u003c\u003c{\n\t\"ImportPath\": \"formatproblemcoord\",\n\t\"DepOnly\": true,\n\t\"Incomplete\": true,\n\t\"Stale\": true,\n\t\"StaleReason\": \"build ID mismatch\",\n\t\"Error\": {\n\t\t\"ImportStack\": [\n\t\t\t\"formatproblem\",\n\t\t\t\"formatproblemcoord\"\n\t\t],\n\t\t\"Pos\": \"main.go:3:8\",\n\t\t\"Err\": \"cannot find package \\\"formatproblemcoord\\\" in any of:\\n\\tc:\\\\go\\\\src\\\\formatproblemcoord (from $GOROOT)\\n\\tE:\\\\Dev\\\\go\\\\src\\\\formatproblemcoord (from $GOPATH)\"\n\t}\n}\n{\n\t\"Dir\": \"E:\\\\Dev\\\\go\\\\src\\\\formatproblem\",\n\t\"ImportPath\": \"formatproblem\",\n\t\"Name\": \"hexm\",\n\t\"Target\": \"E:\\\\Dev\\\\go\\\\pkg\\\\windows_amd64\\\\formatproblem.a\",\n\t\"Root\": \"E:\\\\Dev\\\\go\",\n\t\"Match\": [\n\t\t\"e:/Dev/go/src/formatproblem\"\n\t],\n\t\"Incomplete\": true,\n\t\"Stale\": true,\n\t\"StaleReason\": \"stale dependency: formatproblemcoord\",\n\t\"GoFiles\": [\n\t\t\"main.go\"\n\t],\n\t\"CompiledGoFiles\": [\n\t\t\"main.go\"\n\t],\n\t\"Imports\": [\n\t\t\"formatproblemcoord\"\n\t],\n\t\"Deps\": [\n\t\t\"formatproblemcoord\"\n\t],\n\t\"DepsErrors\": [\n\t\t{\n\t\t\t\"ImportStack\": [\n\t\t\t\t\"formatproblem\",\n\t\t\t\t\"formatproblemcoord\"\n\t\t\t],\n\t\t\t\"Pos\": \"main.go:3:8\",\n\t\t\t\"Err\": \"cannot find package \\\"formatproblemcoord\\\" in any of:\\n\\tc:\\\\go\\\\src\\\\formatproblemcoord (from $GOROOT)\\n\\tE:\\\\Dev\\\\go\\\\src\\\\formatproblemcoord (from $GOPATH)\"\n\t\t}\n\t]\n}\n\u003e\u003e\n"}
+
+
+[Trace - 01:21:26.699 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 go/packages.Load\n\tpackages = 1"}
+
+
+[Info  - 01:21:26] 2020/01/22 01:21:26 59.4789ms for GOROOT=c:\go GOPATH=E:\Dev\go GO111MODULE= PWD=e:\Dev\go\src\formatproblem go "list" "-e" "-json" "-compiled=true" "-test=true" "-export=false" "-deps=true" "-find=false" "--" "e:\\Dev\\go\\src\\formatproblem", stderr: <<>> stdout: <<{
+	"ImportPath": "formatproblemcoord",
+	"DepOnly": true,
+	"Incomplete": true,
+	"Stale": true,
+	"StaleReason": "build ID mismatch",
+	"Error": {
+		"ImportStack": [
+			"formatproblem",
+			"formatproblemcoord"
+		],
+		"Pos": "main.go:3:8",
+		"Err": "cannot find package \"formatproblemcoord\" in any of:\n\tc:\\go\\src\\formatproblemcoord (from $GOROOT)\n\tE:\\Dev\\go\\src\\formatproblemcoord (from $GOPATH)"
+	}
+}
+{
+	"Dir": "E:\\Dev\\go\\src\\formatproblem",
+	"ImportPath": "formatproblem",
+	"Name": "hexm",
+	"Target": "E:\\Dev\\go\\pkg\\windows_amd64\\formatproblem.a",
+	"Root": "E:\\Dev\\go",
+	"Match": [
+		"e:/Dev/go/src/formatproblem"
+	],
+	"Incomplete": true,
+	"Stale": true,
+	"StaleReason": "stale dependency: formatproblemcoord",
+	"GoFiles": [
+		"main.go"
+	],
+	"CompiledGoFiles": [
+		"main.go"
+	],
+	"Imports": [
+		"formatproblemcoord"
+	],
+	"Deps": [
+		"formatproblemcoord"
+	],
+	"DepsErrors": [
+		{
+			"ImportStack": [
+				"formatproblem",
+				"formatproblemcoord"
+			],
+			"Pos": "main.go:3:8",
+			"Err": "cannot find package \"formatproblemcoord\" in any of:\n\tc:\\go\\src\\formatproblemcoord (from $GOROOT)\n\tE:\\Dev\\go\\src\\formatproblemcoord (from $GOPATH)"
+		}
+	]
+}
+>>
+
+[Trace - 01:21:26.699 AM] Received notification 'window/logMessage'.
+Params: {"type":3,"message":"2020/01/22 01:21:26 go/packages.Load\n\tpackage = formatproblem\n\tfiles = [E:\\Dev\\go\\src\\formatproblem\\main.go]"}
+
+
+[Info  - 01:21:26] 2020/01/22 01:21:26 go/packages.Load
+	packages = 1
+[Info  - 01:21:26] 2020/01/22 01:21:26 go/packages.Load
+	package = formatproblem
+	files = [E:\Dev\go\src\formatproblem\main.go]
+[Trace - 01:21:26.699 AM] Received response 'textDocument/documentSymbol - (67)' in 140ms.
+Result: [{"name":"TileMap","detail":"struct{...}","kind":23,"range":{"start":{"line":2,"character":5},"end":{"line":6,"character":1}},"selectionRange":{"start":{"line":2,"character":5},"end":{"line":2,"character":12}},"children":[{"name":"Width","detail":"int","kind":8,"range":{"start":{"line":3,"character":1},"end":{"line":3,"character":11}},"selectionRange":{"start":{"line":3,"character":1},"end":{"line":3,"character":6}}},{"name":"Height","detail":"int","kind":8,"range":{"start":{"line":4,"character":1},"end":{"line":4,"character":11}},"selectionRange":{"start":{"line":4,"character":1},"end":{"line":4,"character":7}}},{"name":"Data","detail":"[]int","kind":8,"range":{"start":{"line":5,"character":1},"end":{"line":5,"character":13}},"selectionRange":{"start":{"line":5,"character":1},"end":{"line":5,"character":5}}},{"name":"calcIndex","detail":"(pos invalid type)","kind":6,"range":{"start":{"line":30,"character":0},"end":{"line":32,"character":1}},"selectionRange":{"start":{"line":30,"character":17},"end":{"line":30,"character":26}}},{"name":"GetTile","detail":"(pos invalid type)","kind":6,"range":{"start":{"line":38,"character":0},"end":{"line":40,"character":1}},"selectionRange":{"start":{"line":38,"character":17},"end":{"line":38,"character":24}}},{"name":"SetTile","detail":"(tile int, pos invalid type)","kind":6,"range":{"start":{"line":34,"character":0},"end":{"line":36,"character":1}},"selectionRange":{"start":{"line":34,"character":19},"end":{"line":34,"character":26}}}]},{"name":"NewTileMap","detail":"(width int, height int, defaultTile int)","kind":12,"range":{"start":{"line":8,"character":0},"end":{"line":20,"character":1}},"selectionRange":{"start":{"line":8,"character":5},"end":{"line":8,"character":15}}},{"name":"InitTileMap","detail":"(width int, height int, data []int)","kind":12,"range":{"start":{"line":22,"character":0},"end":{"line":28,"character":1}},"selectionRange":{"start":{"line":22,"character":5},"end":{"line":22,"character":16}}}]
+
+
+[Trace - 01:21:26.925 AM] Sending request 'textDocument/documentLink - (68)'.
+Params: {"textDocument":{"uri":"file:///e%3A/Dev/go/src/formatproblem/main.go"}}
+
+
+[Trace - 01:21:26.926 AM] Received response 'textDocument/documentLink - (68)' in 0ms.
+Result: {}
+
+
